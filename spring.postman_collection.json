@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "8172f02a-d379-4cc5-9c2b-358b0027a496",
+		"name": "spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllUsuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/usuarios/getAll",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"usuarios",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUsuarioById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/usuarios/get/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"usuarios",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removerUsuarioById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/usuarios/remove/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"usuarios",
+						"remove",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"Wilker\",\n\t\"perfis\": [\n\t\t{\"id\":1 , \"nome\": \"ADM\"}\n\t]\n}"
+				},
+				"url": {
+					"raw": "{{host}}/usuarios/criar",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"usuarios",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterarUsuario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"nome\": \"José\",\n\t\"perfis\": [\n\t\t{\"id\":1 , \"nome\": \"ADM\"}\n\t]\n}"
+				},
+				"url": {
+					"raw": "{{host}}/usuarios/alterar/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"usuarios",
+						"alterar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPerfis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/usuarios/getAll",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"usuarios",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPerfilById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/usuarios/get/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"usuarios",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removerPerfilById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/perfis/remove/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"perfis",
+						"remove",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criarPerfil",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"Wilker\",\n\t\"perfis\": [\n\t\t{\"id\":1 , \"nome\": \"ADM\"}\n\t]\n}"
+				},
+				"url": {
+					"raw": "{{host}}/usuarios/criar",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"usuarios",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterarPerfil",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"nome\": \"ADM\"\n}"
+				},
+				"url": {
+					"raw": "{{host}}/usuarios/alterar/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"usuarios",
+						"alterar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
